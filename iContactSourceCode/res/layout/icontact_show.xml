@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/icontact_show">
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent" 
+        android:layout_marginLeft="20px"
+    	android:layout_marginTop="20px"
+    	android:layout_marginRight="20px"
+        >
+    <TableRow
+	    android:id="@+id/TableRow10"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" >
+
+	    <TextView style="@style/tvstyle"
+	        android:id="@+id/TextView10"
+	        android:text="Photo"
+
+	         />
+
+	    <ImageView
+	        android:id="@+id/img_show"
+	        android:layout_width="100px"
+	        android:layout_height="100px"
+	        android:maxLength="11"
+	        android:padding="5px" />
+
+	</TableRow>
+    <TableRow
+	    android:id="@+id/TableRow11"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" >
+
+	    <TextView style="@style/tvstyle"
+	        android:id="@+id/TextView11"
+	        android:text="@string/name"
+	         />
+
+	    <TextView
+	        android:id="@+id/shname"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="30px"
+	        android:maxLength="11" >
+	    </TextView>
+	</TableRow>
+	<TableRow
+	    android:id="@+id/TableRow22"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" >
+
+	    <TextView style="@style/tvstyle"
+	        android:id="@+id/TextView22"
+	        android:text="@string/note"
+	        />
+
+	    <TextView
+	        android:id="@+id/shnote"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="30px"
+	        android:maxLength="11" >
+
+	    </TextView>
+	</TableRow>
+
+	<TableRow 
+		android:id="@+id/TableRow23" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+		<TextView style="@style/tvstyle"
+			android:id="@+id/TextView23"  
+			android:text="@string/mobph"></TextView>
+		<TextView 
+			android:id="@+id/shmobph" 
+			
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent"
+			android:textSize="30px"
+			></TextView>
+	</TableRow>
+	<TableRow 
+		android:id="@+id/TableRow24" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+		<TextView style="@style/tvstyle"
+			android:id="@+id/TextView24" 
+			android:text="@string/telph"></TextView>
+		<TextView 
+			android:id="@+id/shtelph" 
+			
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent"
+			android:textSize="30px"
+			></TextView>
+	</TableRow>
+	<TableRow 
+		android:id="@+id/TableRow25" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+		<TextView style="@style/tvstyle"
+			android:id="@+id/TextView25" 
+			android:text="@string/addr" 
+			></TextView>
+		<TextView 
+			android:id="@+id/shaddr" 
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent"
+			android:textSize="30px"
+			></TextView>
+	</TableRow>
+	<TableRow 
+		android:id="@+id/TableRow26" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+		<TextView style="@style/tvstyle"
+			android:id="@+id/TextView26"  
+			android:text="@string/email"></TextView>
+		<TextView 
+			android:id="@+id/shemail" 
+			
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent"
+			android:textSize="30px"
+			></TextView>
+	</TableRow>
+	<TableRow 
+		android:id="@+id/TableRow27" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+		<TextView style="@style/tvstyle"
+			android:id="@+id/TextView27"
+			android:text="@string/firm"></TextView>
+		<TextView
+			android:id="@+id/shfirm" 
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent"
+			android:textSize="30px"
+			></TextView>
+	</TableRow>
+	<TableRow 
+		android:id="@+id/TableRow28" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+		<TextView style="@style/tvstyle"
+			android:id="@+id/TextView28"
+			android:text="@string/blog"></TextView>
+		<TextView
+			android:id="@+id/shblog"
+			
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent"
+			android:textSize="30px"
+		></TextView>
+	</TableRow>
+	
+<LinearLayout   
+     android:orientation="horizontal"   
+     android:layout_width="fill_parent"   
+     android:layout_height="fill_parent"   
+     android:layout_weight="1"
+     android:gravity="center">    
+		<ImageButton 
+			android:id="@+id/backbn"
+			android:scaleType="fitXY"
+			android:background="@drawable/icon_back" 
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content"></ImageButton>
+		<ImageButton
+		    android:layout_marginLeft="20px"
+		    android:id="@+id/editbn"
+		    android:scaleType="fitXY"
+		    android:background="@drawable/icon_edit"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    />		
+		<ImageButton
+		    android:layout_marginLeft="20px"
+		    android:id="@+id/delbn"
+		    android:scaleType="fitXY"
+		    android:background="@drawable/icon_del"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    />
+	</LinearLayout>
+    
+   </LinearLayout> 
+
+</LinearLayout>

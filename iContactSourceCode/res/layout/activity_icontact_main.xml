@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/icontact_main"
+    android:orientation="vertical" >
+
+    <!-- 查找和添加按钮 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/searchtxt"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:maxLength="50"
+            android:textSize="30sp" />
+
+        <ImageButton
+            android:id="@+id/searchbn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/icon_search"
+            >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/addbn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20px"
+            android:background="@drawable/icon_add"
+             >
+
+        </ImageButton>
+    </LinearLayout>
+
+    <!-- ListView控件 -->
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="wrap_content"
+        android:layout_height="285dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.14"
+        android:cacheColorHint="#00000000"
+        android:textSize="16px" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center|bottom"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/changebn"
+            android:layout_width="57dp"
+            android:layout_height="46dp"
+            android:background="@drawable/icon_change" />
+
+        <ImageButton
+            android:id="@+id/stopbn"
+            android:layout_width="57dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="20px"
+            android:background="@drawable/icon_stop" />
+    </LinearLayout>
+
+</LinearLayout>

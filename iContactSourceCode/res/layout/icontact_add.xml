@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/icontact_add"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent" 
+        android:layout_marginLeft="20px"
+    	android:layout_marginTop="20px"
+    	android:layout_marginRight="20px"
+        >
+    <TableRow 
+		android:id="@+id/tr_img" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+		<TextView 
+			android:id="@+id/tv_img" 
+			style="@style/tvstyle"
+			android:text="Photo">
+		</TextView>
+		<ImageView
+			android:id="@+id/iv_img"
+			android:layout_width="100px"
+			android:layout_height="100px"
+			android:padding="5px">
+		</ImageView>
+		<Gallery 
+  			android:id="@+id/gallery_add"
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content">
+		</Gallery>
+	</TableRow>
+	    
+    <TableRow
+	    android:id="@+id/TableRow01"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" >
+        
+	    <TextView style="@style/tvstyle"
+	        android:id="@+id/TextView01"
+	        android:text="@string/name"
+	         />
+
+	    <EditText
+	        android:id="@+id/edname"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:hint="contact name"
+	        android:maxLength="11" >
+	    </EditText>
+	</TableRow>
+	<TableRow
+	    android:id="@+id/TableRow02"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" >
+
+	    <TextView style="@style/tvstyle"
+	        android:id="@+id/TextView02"
+	        android:text="@string/note"
+	        />
+
+	    <EditText
+	        android:id="@+id/ednote"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="relevent note"
+	        android:maxLength="11" >
+
+	    </EditText>
+	</TableRow>
+
+	<TableRow 
+		android:id="@+id/TableRow03" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+		<TextView style="@style/tvstyle"
+			android:id="@+id/TextView03" 
+			android:text="@string/mobph"></TextView>
+		<EditText 
+			android:id="@+id/edmobph"
+			android:maxLength="11"
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent"
+			android:phoneNumber="true"
+			android:hint="11 numbers!"></EditText>
+	</TableRow>
+	<TableRow 
+		android:id="@+id/TableRow04" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+		<TextView style="@style/tvstyle"
+			android:id="@+id/TextView04"  
+			android:text="@string/telph"></TextView>
+		<EditText 
+			android:id="@+id/edtelph"
+			android:maxLength="11" 
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent"
+			android:phoneNumber="true"
+			android:hint="11 numbers!"></EditText>
+	</TableRow>
+	<TableRow 
+		android:id="@+id/TableRow05" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+		<TextView style="@style/tvstyle"
+			android:id="@+id/TextView05"
+			android:text="@string/addr" 
+			></TextView>
+		<EditText 
+			android:id="@+id/edaddr" 
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent"
+			android:hint="contact address"></EditText>
+	</TableRow>
+	<TableRow 
+		android:id="@+id/TableRow06" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+		<TextView style="@style/tvstyle"
+			android:id="@+id/TextView06" 
+			android:text="@string/email"></TextView>
+		<AutoCompleteTextView
+			android:id="@+id/edemail" 
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent"
+			android:hint="contact email"></AutoCompleteTextView>
+	</TableRow>
+	<TableRow 
+		android:id="@+id/TableRow07" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+		<TextView style="@style/tvstyle"
+			android:id="@+id/TextView07"
+			android:text="@string/firm"></TextView>
+		<EditText 
+			android:id="@+id/edfirm" 
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent"
+			android:hint="contact firm"></EditText>
+	</TableRow>
+	<TableRow 
+		android:id="@+id/TableRow08" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+		<TextView style="@style/tvstyle"
+			android:id="@+id/TextView08"
+			android:text="@string/blog"></TextView>
+		<EditText 
+			android:id="@+id/edblog" 
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent"
+			android:text="http://"
+			android:hint="contact blog"></EditText>
+	</TableRow>
+	
+	<LinearLayout   
+	     android:orientation="horizontal"   
+	     android:layout_width="fill_parent"   
+	     android:layout_height="fill_parent"   
+	     android:layout_weight="1"
+	     android:gravity="center"> 
+     
+		<ImageButton 
+			android:id="@+id/okbn"
+			android:background="@drawable/icon_ok" 
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content"></ImageButton>
+
+		<ImageButton
+		    android:layout_marginLeft="20px"
+		    android:id="@+id/clbn"
+		    android:scaleType="centerInside"
+		    android:background="@drawable/icon_cl"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		     />
+
+	</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
